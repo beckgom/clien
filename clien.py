@@ -1,5 +1,6 @@
 #-*- coding: utf-8 -*-
 import sys
+import os
 reload(sys)
 sys.setdefaultencoding("utf8")
 
@@ -55,8 +56,10 @@ def main():
     BestArticleClien('use', 10)
     BestArticleClien('cm_mac', 3)
 
-clienHtml = 'file:///!!!/clien.html'
-webbrowser.open_new(clienHtml)
+    cwd = os.getcwd()
+    clienHtml = 'file://' + cwd + '/clien.html'
+    webbrowser.open_new(clienHtml)
+
 
 if __name__ == '__main__':
     main()
