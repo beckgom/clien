@@ -48,11 +48,15 @@ def BestArticleClien(boardName, replyNumberHope):
                     w.write(article)
                     w.write('<br>')
 
-BestArticleClien('park', 10)
-BestArticleClien('lecture', 8)
-BestArticleClien('kin', 2)
-BestArticleClien('use', 10)
-BestArticleClien('cm_mac', 3)
+def main():
+    BestArticleClien('park', 10)
+    BestArticleClien('lecture', 8)
+    BestArticleClien('kin', 2)
+    BestArticleClien('use', 10)
+    BestArticleClien('cm_mac', 3)
 
 clienHtml = 'file:///!!!/clien.html'
 webbrowser.open_new(clienHtml)
+
+if __name__ == '__main__':
+    main()
