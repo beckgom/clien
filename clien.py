@@ -12,7 +12,7 @@ import time
 import webbrowser
 
 with open('clien.html', 'w') as init_data:
-        init_data.write('<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> ')
+        init_data.write('<meta http-equiv="Content-Type" content="text/html; charset=utf-8">\n')
 
 def BestArticleClien(boardName, replyNumberHope):
     url = 'http://www.clien.net/cs2/bbs/board.php?bo_table=' + boardName
@@ -36,7 +36,7 @@ def BestArticleClien(boardName, replyNumberHope):
 
                 with open('clien.html', 'a') as w:
                     if boardName == 'park':
-                        w.write('모두의공원\t')
+                        w.write('모두의공원')
                     if boardName == 'lecture':
                         w.write('팁과강의')
                     if boardName == 'kin':
@@ -47,7 +47,7 @@ def BestArticleClien(boardName, replyNumberHope):
                         w.write('맥당')
 
                     w.write(article)
-                    w.write('<br>')
+                    w.write('<br>\n')
 
 def main():
     BestArticleClien('park', 10)
