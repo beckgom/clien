@@ -1,3 +1,6 @@
+// By 장진수 (jinsyu.com@gmail.com)
+// Originally posted in Clien (http://www.clien.net/cs2/bbs/board.php?bo_table=lecture&wr_id=288754)
+
 #-*- coding: utf-8 -*-
 import sys
 import os
